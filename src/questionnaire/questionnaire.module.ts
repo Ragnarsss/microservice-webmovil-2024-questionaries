@@ -3,7 +3,7 @@ import { QuestionnaireService } from './questionnaire.service';
 import { QuestionnaireController } from './questionnaire.controller';
 
 @Module({
+  controllers: [QuestionnaireController],
   providers: [QuestionnaireService],
-  controllers: [QuestionnaireController]
 })
 export class QuestionnaireModule {}

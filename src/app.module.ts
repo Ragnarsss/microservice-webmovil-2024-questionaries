@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { QuestionnaireModule } from './questionnaire/questionnaire.module';
-import { DatabaseModule } from './database/database.module';
-import config from './config';
 import { ConfigModule } from '@nestjs/config';
 import * as Joi from 'joi';
+import config from './config';
+import { DatabaseModule } from './database/database.module';
+import { QuestionnaireModule } from './questionnaire/questionnaire.module';
 
 @Module({
   imports: [
@@ -15,7 +15,6 @@ import * as Joi from 'joi';
       isGlobal: true,
       load: [config],
       validationSchema: Joi.object({
-        JWT_SECRET: Joi.string().required(),
         MONGO_DB: Joi.string().required(),
         MONGO_INITDB_ROOT_USERNAME: Joi.string().required(),
         MONGO_INITDB_ROOT_PASSWORD: Joi.string().required(),

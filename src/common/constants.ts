@@ -1,11 +1,11 @@
 export enum RabbitMQ {
-  UserQueue = 'users',
+  QuestionnairesQueue = 'questionnaires',
 }
 
-export enum UserMsg {
-  CREATE = 'CREATE_USER',
-  FIND_ALL = 'FIND_USERS',
-  FIND_ONE = 'FIND_USER',
-  UPDATE = 'UPDATE_USER',
-  DELETE = 'DELETE_USER',
+export enum QuestionnaireMsg {
+  CREATE = 'CREATE_QUESTIONNAIRE',
+  FIND_ALL = 'FIND_QUESTIONNAIRES',
+  FIND_ONE = 'FIND_QUESTIONNAIRE',
+  UPDATE = 'UPDATE_QUESTIONNAIRE',
+  DELETE = 'DELETE_QUESTIONNAIRE',
 }
