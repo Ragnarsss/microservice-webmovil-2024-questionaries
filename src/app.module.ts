@@ -4,6 +4,7 @@ import * as Joi from 'joi';
 import config from './config';
 import { DatabaseModule } from './database/database.module';
 import { QuestionnaireModule } from './questionnaire/questionnaire.module';
+import { QuestionModule } from './question/question.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { QuestionnaireModule } from './questionnaire/questionnaire.module';
         AMQP_URL: Joi.string().required(),
       }),
     }),
+    QuestionModule,
   ],
 })
 export class AppModule {}
