@@ -1,8 +1,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { CreateQuestionnaireDto } from './dto/create-questionnaire.dto';
-import { UpdateQuestionnaireDto } from './dto/update-questionnaire.dto';
+import {
+  CreateQuestionnaireDto,
+  UpdateQuestionnaireDto,
+} from './dto/questionnaire.dto';
 import {
   Questionnaire,
   QuestionnaireDocument,
