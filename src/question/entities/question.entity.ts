@@ -8,7 +8,7 @@ export class Question {
   @Prop({ required: true })
   title: string;
 
-  @Prop()
+  @Prop({ required: true })
   description: string;
 
   @Prop({ default: false })

@@ -1,8 +1,7 @@
 import { Controller, HttpException, HttpStatus } from '@nestjs/common';
 import { MessagePattern, Payload } from '@nestjs/microservices';
 import { QuestionService } from './question.service';
-import { CreateQuestionDto } from './dto/create-question.dto';
-import { UpdateQuestionDto } from './dto/update-question.dto';
+import { CreateQuestionDto, UpdateQuestionDto } from './dto/question.dto';
 import { QuestionMsg } from '../common/constants';
 
 @Controller()
